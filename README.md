@@ -1,1 +1,1 @@
-<p><a href="www.happilygardening.com">www.happilygardening.com</a></p>
+<p><a href="https://www.happilygardening.com" target="_blank">www.happilygardening.com</a></p>
