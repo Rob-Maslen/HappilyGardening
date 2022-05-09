@@ -100,7 +100,7 @@ function load () {
       result.fact          = data.fact;
       result.learnMoreLink = data.rightAnswer[4];
       result.ctaText       = data.ctaText;
-      result.rightName     = data.rightAnswerName;
+      result.rightName     = "Wrong sorry, it's <br>" + data.rightAnswerName;
       oldLatitude          = newLatitude;
       oldLongitude         = newLongitude;
       newLatitude          = data.latitude;

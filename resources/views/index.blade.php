@@ -25,13 +25,15 @@
 
 <div id="answers" v-bind:style="{ display: display, opacity: opacity }" class="answers">
   <div v-for="(text, i) in choices" class="answer" v-on:click="checkAnswer(i)">
-    <br><p v-html="text"></p><br><br>
+    <br>
+    <div v-html="text"></div>
+    <br>
   </div>
 </div>
 
 <div id="result" class="modal" v-bind:style="{ display: display, opacity: opacity }" v-on:click="afterResult">
   <div class="modalContent">
-    <p v-bind:style="{ display: displayWrong}" class="result">Wrong sorry, it's <br> <p v-html="rightName"></p></p>
+    <p v-bind:style="{ display: displayWrong}" class="result" v-html="rightName"></p>
 
     <div v-bind:style="{ display: displayRight}" class="rightAnswer">
       <p>Correct!</p>
