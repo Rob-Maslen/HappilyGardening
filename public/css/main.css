@@ -1,4 +1,6 @@
 .body {
+    font-family: Garamond, "Times New Roman", serif;
+    color: #888888;
     margin: 0;
 }
 
@@ -98,7 +100,7 @@
     left: 30%;
     
     border-radius: 50%;
-    font: 1vw Arial, Helvetica, sans-serif;
+    font-size: 1vw;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
     
@@ -141,7 +143,7 @@
     }
 
     .answer {
-        font: 2vw Arial, Helvetica, sans-serif;
+        font-size: 2vw;
     }
 }
 
@@ -157,7 +159,7 @@
 
     .answer {
         width: max-content;
-        font: 4vw Arial, Helvetica, sans-serif;
+        font-size: 4vw;
         margin: 5% auto 5% auto;
     }
 
@@ -166,7 +168,7 @@
     }
 
     .modalContent {
-        font: 1.5vw Arial, Helvetica, sans-serif;
+        font: 1.5vw;
         left: 40%;
         width: 75%;
         margin: 0;

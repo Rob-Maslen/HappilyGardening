@@ -36,7 +36,7 @@ var answers = new Vue({
       }, 12000);
       /* change display to block before changing opacity, otherwise it doesn't fade in */
       setTimeout(function () {
-        result.opacity = "0.75";
+        result.opacity = "0.9";
       }, 13000);
 
       if (answer == rightAnswerNum) {
