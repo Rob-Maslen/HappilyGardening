@@ -1,4 +1,4 @@
-.body {
+body {
     font-family: Garamond, "Times New Roman", serif;
     color: #888888;
     margin: 0;
@@ -48,7 +48,7 @@
 .answer {
     position: relative;
     margin: 15%;
-    padding: 0 0.75em 0 0.75em;
+    padding: 0.25em 0.75em 0.25em 0.75em;
     cursor: pointer;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
@@ -67,7 +67,19 @@
 	top: 10px;
 }
 
+.answer hr {
+    border: 0;
+    height: 1px;
+    width: 25%;
+    background-image: -webkit-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
+    background-image: -moz-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
+    background-image: -ms-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
+    background-image: -o-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
+}
 
+.answerText {
+    padding: 0.25em 0;
+}
 
 /* The Modal (background) */
 .modal {

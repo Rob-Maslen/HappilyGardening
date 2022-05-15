@@ -17,7 +17,7 @@
   <script src="https://cesium.com/downloads/cesiumjs/releases/1.74/Build/Cesium/Cesium.js"></script>
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.74/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 </head>
-<body class="body">
+<body>
 
 <div id="picHolder" v-bind:style="{ display: display, opacity: opacity }" class="picHolder">
   <div id="pic" v-bind:style="{ height: height, width: width, backgroundImage: bgImage }" class="pic"></div>
@@ -25,9 +25,9 @@
 
 <div id="answers" v-bind:style="{ display: display, opacity: opacity }" class="answers">
   <div v-for="(text, i) in choices" class="answer" v-on:click="checkAnswer(i)">
-    <br>
-    <div v-html="text"></div>
-    <br>
+    <hr>
+    <div v-html="text" class="answerText"></div>
+    <hr>
   </div>
 </div>
 
