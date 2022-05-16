@@ -67,18 +67,29 @@ body {
 	top: 10px;
 }
 
-.answer hr {
+hr {
     border: 0;
     height: 1px;
-    width: 25%;
+    margin-top: 3px;
+    margin-bottom: 3px;
     background-image: -webkit-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
     background-image: -moz-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
     background-image: -ms-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
     background-image: -o-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
 }
 
+hr.small {
+    width: 10%;
+}
+
+hr.medium {
+    width: 40%;
+}
+
 .answerText {
     padding: 0.25em 0;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 /* The Modal (background) */
