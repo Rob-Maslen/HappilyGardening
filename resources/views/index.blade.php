@@ -23,17 +23,17 @@
 
     <div id="answers" v-bind:style="{ display: display, opacity: opacity }" class="answers">
         <div v-for="(text, i) in choices" class="answer" v-on:click="checkAnswer(i)">
-            <hr class="small">
-            <hr class="medium">
+            <div v-if="i !== '2'"><hr class="small1"><hr class="medium"></div>
+            <div v-if="i === '2'"><hr class="small2"><hr class="big"></div>
             <div v-html="text" class="answerText"></div>
-            <hr class="medium">
-            <hr class="small">
+            <div v-if="i === '2'"><hr class="big"><hr class="small2"></div>
+            <div v-if="i !== '2'"><hr class="medium"><hr class="small1"></div>
         </div>
     </div>
 
     <div id="result" class="modal" v-bind:style="{ display: display, opacity: opacity }" v-on:click="afterResult">
         <div class="modalContent">
-            <hr class="small">
+            <hr class="small1">
             <hr class="medium">
             <p v-bind:style="{ display: displayWrong}" class="result" v-html="rightName"></p>
             <div v-bind:style="{ display: displayRight}" class="rightAnswer">
@@ -43,7 +43,7 @@
                 <p v-html="ctaText"></p>
             </div>
             <hr class="medium">
-            <hr class="small">
+            <hr class="small1">
         </div>
     </div>
 

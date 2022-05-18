@@ -72,18 +72,26 @@ hr {
     height: 1px;
     margin-top: 3px;
     margin-bottom: 3px;
-    background-image: -webkit-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
-    background-image: -moz-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
-    background-image: -ms-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
-    background-image: -o-linear-gradient(left, #E8E8E8, #989898, #E8E8E8);
+    background-image: -webkit-linear-gradient(left, #F8F8F8, #D3D3D3, #F8F8F8);
+    background-image: -moz-linear-gradient(left, #F8F8F8, #D3D3D3, #F8F8F8);
+    background-image: -ms-linear-gradient(left, #F8F8F8, #D3D3D3, #F8F8F8);
+    background-image: -o-linear-gradient(left, #F8F8F8, #D3D3D3, #F8F8F8);
 }
 
-hr.small {
+hr.small1 {
     width: 10%;
+}
+
+hr.small2 {
+    width: 15%;
 }
 
 hr.medium {
     width: 40%;
+}
+
+hr.big {
+    width: 65%;
 }
 
 .answerText {
@@ -174,7 +182,7 @@ hr.medium {
     .answers {
         right: auto;
         left: 0;
-        top: 60%;
+        top: 40%;
         
         height: 25%;
         width: 100%;
