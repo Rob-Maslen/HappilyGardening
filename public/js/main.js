@@ -4,7 +4,7 @@ var picHolder = new Vue({
   el: '#picHolder',
   data: {
     opacity: "0",
-    display: "block",
+    display: "flex",
     height:  "",
     width:   "",
     bgImage: "",
@@ -132,7 +132,7 @@ function load () {
 
 function loadNext () {
   answers.display   = "block";
-  picHolder.display = "block";
+  picHolder.display = "flex";
   result.opacity    = "0";
   map.opacity       = "0";
 
