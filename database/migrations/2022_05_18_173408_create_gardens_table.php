@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('address');
             $table->tinyText('latitude');
             $table->tinyText('longitude');
-            $table->tinyInteger('zoom');
+            $table->smallInteger('zoom');
             $table->tinyText('image_folder');
             $table->text('link');
             $table->timestamps();
