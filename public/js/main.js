@@ -1,5 +1,12 @@
 var rightAnswerNum, newLatitude = 0, newLongitude = 0, oldLatitude, oldLongitude, zoom;
 
+var firstLoadScreen = new Vue({
+  el: '#firstLoadScreen',
+  data: {
+    display: "block",
+  },
+})
+
 var picHolder = new Vue({
   el: '#picHolder',
   data: {
@@ -20,15 +27,19 @@ var answers = new Vue({
   },
   methods: {
     checkAnswer: function (answer) {
-      map.display = "block";
-      map.opacity = "1";
-      setTimeout(mapZoomOut, 2000); // do after quiz fades out, which takes 2 seconds
+      if (firstLoadScreen.display == "block") {
+        firstLoadScreen.display = "none";
+      }
 
       answers.opacity = "0";
       setTimeout(function () { answers.display = "none"; }, 3000); // do after answer fades out, which takes 3 seconds
 
       picHolder.opacity = "0";
       setTimeout(function () { picHolder.display = "none"; }, 3000); // do after pic fades out, which takes 3 seconds
+
+      map.display = "block";
+      map.opacity = "1";
+      setTimeout(mapZoomOut, 2000); // do after quiz fades out, which takes 2 seconds
 
       // Try to get result to appear after the map has shown which country the garden is in. So the user can tell from the map whether they're correct.
       setTimeout(function () {
@@ -75,8 +86,8 @@ var result = new Vue({
 var map = new Vue({
   el: '#cesiumMap',
   data: {
-    display: "none",
-    opacity: "0",
+    display: "block",
+    opacity: "1",
   },
   methods: {
     // When user clicks anywhere outside the result modal, close the result modal and load the next question image

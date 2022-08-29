@@ -4,6 +4,15 @@ body {
     margin: 0;
 }
 
+.firstLoadScreen {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+}
+
 .picHolder {
     position: absolute;
     width: 100%;

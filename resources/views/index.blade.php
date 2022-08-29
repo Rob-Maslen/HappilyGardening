@@ -17,6 +17,8 @@
    <link href="https://cesium.com/downloads/cesiumjs/releases/1.74/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 </head>
 <body>
+    <div id="firstLoadScreen" v-bind:style="{ display: display }" class="firstLoadScreen"></div>
+
     <div id="picHolder" v-bind:style="{ display: display, opacity: opacity }" class="picHolder">
         <div id="pic" v-bind:style="{ height: height, width: width, backgroundImage: bgImage }" class="pic"></div>
     </div>
